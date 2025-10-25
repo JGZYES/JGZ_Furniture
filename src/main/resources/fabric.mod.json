@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "jgz_furniture_mod",
+	"version": "${version}",
+	"name": "JGZ_Furniture_Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/jgz_furniture_mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.jgzyes.furniture_mod.JGZ_Furniture_Mod"
+		],
+		"fabric-datagen": [
+			"com.jgzyes.furniture_mod.JGZ_Furniture_ModDataGenerator"
+		]
+	},
+	"mixins": [
+		"jgz_furniture_mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
