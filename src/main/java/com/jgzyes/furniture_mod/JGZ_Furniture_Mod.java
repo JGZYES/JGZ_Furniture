@@ -1,5 +1,6 @@
 package com.jgzyes.furniture_mod;
 
+import com.jgzyes.furniture_mod.Item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -20,5 +21,7 @@ public class JGZ_Furniture_Mod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+
+		ModItems.registerModItems();
 	}
 }
